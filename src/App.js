@@ -1,16 +1,7 @@
-import React from 'react'
-import { Route } from 'react-router'
-import { Layout } from './components/Layout'
-import Products from './components/Products'
-import Login from './components/Login'
-import Submit from './components/Submit'
-import Category from './components/Category'
-import User from './components/User'
-import Permissions from './components/Permissions'
-import './custom.css'
+import logo from './logo.svg';
+import './App.css';
 
-
-const App = () => {
+function App() {
   return (
     <div>
       <Route exact path="/" component={Login} />
@@ -20,7 +11,7 @@ const App = () => {
       <Route path="/User" component={User} />
       <Route path="/Permissions" component={Permissions} />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
