@@ -7,7 +7,7 @@ import Submit from './components/Submit'
 import Category from './components/Category'
 import User from './components/User'
 import Permissions from './components/Permissions'
-import './custom.css'
+//import './custom.css'
 
 
 const App = () => {
