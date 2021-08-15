@@ -114,7 +114,55 @@ const Login = (props) => {
   };
 
   return (
-   <div>Hola</div>
+    <Form onSubmit={() => login()}>
+      <div className="login-container">
+        <div className="login-content">
+          {/*<Logo />*/}
+          {hasError && (
+            <lable className="label-alert">
+              Your password or username are incorrect or do not exist.
+            </lable>
+          )}
+          <Label text="Username" />
+          <div>
+            <i className="fa fa-username form-control-feedback"></i>
+            <CustomInput
+              attribute={{
+                id: 'username',
+                name: 'username',
+                type: 'text',
+                placeholder: 'Enter your username'
+            }}
+            handleChange={handleChange}
+            param={usernameError}
+            />
+          </div>
+          <Label text="Password" />
+          <div>
+            <i className="fa fa-lock form-control-feedback"></i>
+            <CustomInput
+              attribute={{
+                id: 'password',
+                name: 'password',
+                type: 'Password',
+                placeholder: 'Enter your password'
+            }}
+            handleChange={handleChange}
+            param={passwordError}
+            />
+          </div>
+          {passwordError && (
+            <label className="label-error">invalid or incorrect password</label>
+          )}
+
+          <div className="submit-button-container">
+            <Input type="submit" className="submit" value="Login" />
+          </div>
+          <RegisterModal />
+          {email.email ? <PasswordModal userLogin={email} /> : null}
+        </div>
+      </div>
+    </Form>
   );
 };
 
