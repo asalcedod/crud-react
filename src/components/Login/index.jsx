@@ -1,9 +1,8 @@
 import "./login.css";
 import "./Input/Input.css";
-import { confirmAlert } from "react-confirm-alert";
 import "./../../styles/react-confirm-alert.css";
 
-const Login = (props) => {
+const Login = () => {
   return (
    <div>{"Hola"}</div>
   );
