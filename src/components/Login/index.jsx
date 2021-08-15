@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
-import "bootstrap/dist/css/bootstrap.css";
 import "./login.css";
 import "./Input/Input.css";
+import { confirmAlert } from "react-confirm-alert";
 import "./../../styles/react-confirm-alert.css";
 
-const Login = () => {
+const Login = (props) => {
   return (
    <div>{"Hola"}</div>
   );
