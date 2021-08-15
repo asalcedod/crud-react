@@ -8,7 +8,7 @@ import "./../../styles/react-confirm-alert.css";
 
 const Login = () => {
   return (
-   <div>{"Hola"}</div>
+   <>{"Hola"}</>
   );
 };
 
