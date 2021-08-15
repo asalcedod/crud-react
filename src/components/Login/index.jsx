@@ -1,5 +1,5 @@
 import React from "react";
-// import md5 from "md5";
+import md5 from "md5";
 // import Cookies from "universal-cookie";
 import "bootstrap/dist/css/bootstrap.css";
 import "./login.css";
@@ -8,7 +8,7 @@ import "./../../styles/react-confirm-alert.css";
 
 const Login = () => {
   return (
-   <>{"Hola"}</>
+   <>{md5("Hola")}</>
   );
 };
 
