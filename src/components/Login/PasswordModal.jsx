@@ -95,7 +95,7 @@ const PasswordModal = ({ userLogin }) => {
     <div>
       <div class="row submit-button-container">
         <div class="col mr-4 d-flex justify-content-center">
-          <a href="#" class="stretched-link" onClick={toggle}>
+          <a class="stretched-link" onClick={toggle}>
             Forgot your password
           </a>
         </div>

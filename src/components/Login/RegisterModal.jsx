@@ -11,13 +11,12 @@ import {
   FormGroup,
   Label,
   Input,
-  Container,
 } from 'reactstrap'
 import axios from 'axios'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import PropTypes from 'prop-types'
 
-const RegisterModal = ({ }) => {
+const RegisterModal = () => {
   let baseUrl = process.env.REACT_APP_API_LOCAL
   switch (process.env.NODE_ENV) {
     case "development":
