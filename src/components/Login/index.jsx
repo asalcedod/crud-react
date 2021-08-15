@@ -1,11 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Button, Form, Input } from "reactstrap";
 import md5 from "md5";
-import CustomInput from "./Input/Index";
-import PasswordModal from "./PasswordModal";
-import RegisterModal from "./RegisterModal";
-import Logo from "./Logo/Logo";
-import Label from "./Label/Label";
 import axios from "axios";
 import Cookies from "universal-cookie";
 import "bootstrap/dist/css/bootstrap.css";
