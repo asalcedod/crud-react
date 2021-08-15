@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import md5 from "md5";
-import Cookies from "universal-cookie";
+import React from "react";
+// import md5 from "md5";
+// import Cookies from "universal-cookie";
 import "bootstrap/dist/css/bootstrap.css";
 import "./login.css";
 import "./Input/Input.css";
