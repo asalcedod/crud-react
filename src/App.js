@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Route } from 'react-router'
+import { Layout } from './components/Layout'
+import Products from './components/Products'
+import Login from './components/Login'
+import Submit from './components/Submit'
+import Category from './components/Category'
+import User from './components/User'
+import Permissions from './components/Permissions'
+import './custom.css'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Route exact path="/" component={Login} />
+      <Route path="/Submit" component={Submit} />
+      <Route path="/Categories" component={Category} />
+      <Route path="/Products" component={Products} />
+      <Route path="/User" component={User} />
+      <Route path="/Permissions" component={Permissions} />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
